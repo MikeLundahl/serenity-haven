@@ -3,6 +3,9 @@
 
 https://sibtomcat.itch.io/tai-chi-demo-scene
 
+
+TGYG2T.png
+
 This is something between a demo scene and a study project. Trying to get a handle on Godot and the use of assets.
 
 Created in cooperation with *xolatgames*.
@@ -32,3 +35,5 @@ What's currently available:
 **Assets by MH Team:** *punkduck*.
 
 Godot 4.4.1
+
+![](https://gitlab.com/world-theater/tai-chi/-/raw/main/TGYG2T.png)
