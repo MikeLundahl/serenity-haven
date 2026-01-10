@@ -1,0 +1,80 @@
+GDRE Tools v0.9.0-beta.4
+Windows 10.0.22631, Quadro RTX 5000, opengl3
+Opening file: E:/Tai chi/tai-chi_0003.exe
+Verified 316 files, no errors detected!
+Extracted 316 files, no errors detected!
+WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: ImportExporter::_export_imports (modules\gdsdecomp\utility\import_exporter.cpp:241)
+Script version 4.3.0-stable (rev 0x77af6ca) detected
+Exporting resources in parallel...
+Saved project config project.godot.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     2
+Failed scripts:                         0
+Imported resources for export session:  153
+Successfully converted:                 153
+Lossy:                                  6
+Rewrote metadata:                       114
+Non-importable conversions:             19
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+The following files were converted from an import that was stored lossy.
+You may lose fidelity when re-importing these files upon loading the project.
+res://.godot/imported/SwimmingPool_SwimmingPool_ChairFrame.jpg-8604aabc6835a0089288a55f233b0038.s3tc.ctex to res://Scenes/Sources/Place/SwimmingPool_SwimmingPool_ChairFrame.jpg
+res://.godot/imported/SwimmingPool_SwimmingPool_Chair_Fabric.jpg-f3eb3e44b814f621dfce3db72f8c1345.s3tc.ctex to res://Scenes/Sources/Place/SwimmingPool_SwimmingPool_Chair_Fabric.jpg
+res://.godot/imported/SwimmingPool_SwimmingPool_ground_1.jpg-7963f212db44d3b5105582c9a22f80c7.s3tc.ctex to res://Scenes/Sources/Place/SwimmingPool_SwimmingPool_ground_1.jpg
+res://.godot/imported/SwimmingPool_SwimmingPool_room_6_27.jpg-956049f2b10f1c7f4863cdfe384e8e0f.s3tc.ctex to res://Scenes/Sources/Place/SwimmingPool_SwimmingPool_room_6_27.jpg
+res://.godot/imported/SwimmingPool_SwimmingPool_room_7_28.jpg-0ed445a514c31b2c68f4a5bf2f59fc6a.s3tc.ctex to res://Scenes/Sources/Place/SwimmingPool_SwimmingPool_room_7_28.jpg
+res://.godot/imported/SwimmingPool_SwimmingPool_wall_1_3.jpg-bd09cc122fb276aa7a7e09724bbc18ca.s3tc.ctex to res://Scenes/Sources/Place/SwimmingPool_SwimmingPool_wall_1_3.jpg
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+res://.godot/imported/Girl_tai_chi_anim_mask.glb-18fe6810aa367dce87b1dac5ba6e915c.scn to res://.assets/Scenes/Sources/Character/Girl_tai_chi_anim_mask.glb
+res://.godot/imported/SwimmingPool.glb-473633ddc5565edeec62cdf3bc17b9e8.scn to res://.assets/Scenes/Sources/Place/SwimmingPool.glb
+res://.godot/imported/flower_daffodil.fbx-9030f199e8e00faf7e808c30cf55c70c.scn to res://.assets/Scenes/Sources/Tree/Flower_daffodil/flower_daffodil.glb
+res://.godot/imported/flower_daffodil_2.fbx-0b80bcf59dd3cffdf38391a9d20f24eb.scn to res://.assets/Scenes/Sources/Tree/Flower_daffodil/flower_daffodil_2.glb
+res://.godot/imported/flower_daffodil_3.fbx-bdd817986e71a386fed2595239daed64.scn to res://.assets/Scenes/Sources/Tree/Flower_daffodil/flower_daffodil_3.glb
+res://.godot/imported/flower_daffodil_4.fbx-4d2bee3f3273371f5bbb46e5c1dcd6b2.scn to res://.assets/Scenes/Sources/Tree/Flower_daffodil/flower_daffodil_4.glb
+res://.godot/imported/flower_daffodil_5.fbx-5f302ae5de2d84d250f858afd9bb6f82.scn to res://.assets/Scenes/Sources/Tree/Flower_daffodil/flower_daffodil_5.glb
+res://.godot/imported/flower_daffodil_6.fbx-ff85a4ed841ba6ec75c5b6ac15a37146.scn to res://.assets/Scenes/Sources/Tree/Flower_daffodil/flower_daffodil_6.glb
+res://.godot/imported/flower_daffodil_7.fbx-28f4bdb7855adc538a0a638725e1516a.scn to res://.assets/Scenes/Sources/Tree/Flower_daffodil/flower_daffodil_7.glb
+res://.godot/imported/Palm1_1.fbx-66a23a8c60679985191e4eab54c89e8b.scn to res://.assets/Scenes/Sources/Tree/Palm1/FBX/Palm1_1.glb
+res://.godot/imported/Palm1_1_2.fbx-6d91da3c615dc56dfb222572e498ae29.scn to res://.assets/Scenes/Sources/Tree/Palm1/FBX/Palm1_1_2.glb
+res://.godot/imported/Palm1_1_3.fbx-4b817cc16282706bc6c7b874e582b8fe.scn to res://.assets/Scenes/Sources/Tree/Palm1/FBX/Palm1_1_3.glb
+res://.godot/imported/Palm1_1w.fbx-e50a1a95daa04fcd08ab266fb1d52a43.scn to res://.assets/Scenes/Sources/Tree/Palm1/FBX/Palm1_1w.glb
+res://.godot/imported/Palm1_2.fbx-c5a527dc716938d5c5edb914554034b3.scn to res://.assets/Scenes/Sources/Tree/Palm1/FBX/Palm1_2.glb
+res://.godot/imported/Palm1_3.fbx-81212b7ea3bbd6bc9bcf2fdce5b2e2a3.scn to res://.assets/Scenes/Sources/Tree/Palm1/FBX/Palm1_3.glb
+res://.godot/imported/Palm2_1.fbx-228ecc19e9836f36ba9bc187d887404f.scn to res://.assets/Scenes/Sources/Tree/Palm2/FBX/Palm2_1.glb
+res://.godot/imported/Palm2_1w.fbx-0b3a0501026562824c1598abfd8f22e1.scn to res://.assets/Scenes/Sources/Tree/Palm2/FBX/Palm2_1w.glb
+res://.godot/imported/Palm2_2.fbx-e609ae75fae0e5d2b29f2882e5e8b6aa.scn to res://.assets/Scenes/Sources/Tree/Palm2/FBX/Palm2_2.glb
+
+
+
+---------------------------------IMPORTANT NOTES----------------------------------
+
+
+Experimental Scene Export:
+Scene export is EXPERIMENTAL and exported scenes may be inaccurate.
+Thus, all exported scenes have been saved to the .assets directory, which will not be picked up by the editor for import.
+Please report any issues you encounter with exported scenes to the Github page Github.
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.3.0 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+

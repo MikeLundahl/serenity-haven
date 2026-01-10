@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ctuv5n41thbw1"
+path="res://.godot/imported/Palm2_1w.fbx-0b3a0501026562824c1598abfd8f22e1.scn"
+
+[deps]
+
+source_file="res://Scenes/Sources/Tree/Palm2/FBX/Palm2_1w.fbx"
+dest_files=["res://.godot/imported/Palm2_1w.fbx-0b3a0501026562824c1598abfd8f22e1.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dogf5g0ki0m42"
+path="res://.godot/imported/flower_daffodil_7.fbx-28f4bdb7855adc538a0a638725e1516a.scn"
+
+[deps]
+
+source_file="res://Scenes/Sources/Tree/Flower_daffodil/flower_daffodil_7.fbx"
+dest_files=["res://.godot/imported/flower_daffodil_7.fbx-28f4bdb7855adc538a0a638725e1516a.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

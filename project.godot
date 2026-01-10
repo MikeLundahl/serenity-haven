@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Tai chi"
+config/version="0.0.0.4"
+run/main_scene="res://Scenes/Main.tscn"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="res://Tai_chi_icon.png"
+config/windows_native_icon="res://Tai_chi_icon.ico"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/size/mode=3
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

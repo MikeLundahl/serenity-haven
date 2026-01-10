@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://iy8durmoo4ny"
+path="res://.godot/imported/Girl_tai_chi_anim_mask.glb-18fe6810aa367dce87b1dac5ba6e915c.scn"
+
+[deps]
+
+source_file="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask.glb"
+dest_files=["res://.godot/imported/Girl_tai_chi_anim_mask.glb-18fe6810aa367dce87b1dac5ba6e915c.scn"]
+
+[params]
+
+dummy_value_ignore_me=0
