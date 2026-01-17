@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Tai chi"
 config/version="0.0.0.4"
-run/main_scene="res://Scenes/Main.tscn"
+run/main_scene="uid://bberpbebph66c"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://Tai_chi_icon.png"
 config/windows_native_icon="res://Tai_chi_icon.ico"
