@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://dyiu08jbepdrb"]
+[gd_scene load_steps=32 format=4 uid="uid://dyiu08jbepdrb"]
 
 [ext_resource type="PackedScene" uid="uid://7400wxt4h42p" path="res://Scenes/SwimmingPool.tscn" id="1"]
 [ext_resource type="Texture2D" uid="uid://rvbl7dfouuuy" path="res://Scenes/Sources/Place/SwimmingPool_SwimmingPool_room_1_1.png" id="2"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://degrv3l20jvcf" path="res://Scenes/Trees/flower_daffodil_6.tscn" id="14"]
 [ext_resource type="PackedScene" uid="uid://v364gc0hcdg5" path="res://Scenes/Trees/flower_daffodil_7.tscn" id="15"]
 [ext_resource type="Script" uid="uid://dgyay5cif5m4k" path="res://Scenes/control.gd" id="16"]
+[ext_resource type="PackedScene" uid="uid://cxnacoxdubgi4" path="res://Scenes/Sources/pool/pool.tscn" id="17_2w5on"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2vkp5"]
 sky_horizon_color = Color(0.67585, 0.7135, 0.7035, 1)
@@ -334,7 +335,7 @@ size = Vector2(7, 5.6)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_yh5nw")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
@@ -530,3 +531,7 @@ color = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Pool" parent="." instance=ExtResource("17_2w5on")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11.306)
+visible = false

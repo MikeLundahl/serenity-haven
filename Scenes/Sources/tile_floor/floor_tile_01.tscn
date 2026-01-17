@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://2rcrf5fxb8my"]
+
+[ext_resource type="Material" uid="uid://br8jdt6lhfav3" path="res://Scenes/Sources/tile_floor/floor_tile_01.material" id="1_kr2q2"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_eoykb"]
+lightmap_size_hint = Vector2i(44, 36)
+add_uv2 = true
+size = Vector3(4, 1, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kr2q2"]
+size = Vector3(4, 1, 4)
+
+[node name="FloorTile01" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+mesh = SubResource("BoxMesh_eoykb")
+surface_material_override/0 = ExtResource("1_kr2q2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("BoxShape3D_kr2q2")

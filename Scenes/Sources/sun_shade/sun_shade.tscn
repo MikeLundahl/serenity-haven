@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5yylr6vsnlw1"]
+
+[ext_resource type="ArrayMesh" uid="uid://d05uu6qtw5dpt" path="res://Scenes/Sources/sun_shade/sun_shade.obj" id="1_n4u3s"]
+[ext_resource type="Material" uid="uid://w1pyjuyjbykq" path="res://Scenes/Sources/sun_lounger/sun_lounger_frame.material" id="2_2ncl2"]
+
+[node name="SunShade" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_n4u3s")
+surface_material_override/0 = ExtResource("2_2ncl2")

@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxnacoxdubgi4"]
+
+[ext_resource type="Material" uid="uid://dxobf67xf8bnx" path="res://Scenes/Sources/pool/water.material" id="5_fqfmb"]
+[ext_resource type="PackedScene" uid="uid://bsskhdf6vr6uc" path="res://Scenes/Sources/pool/pool_mesh.tscn" id="6_3dc4l"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gmu41"]
+size = Vector3(0.5, 1.8, 0.5)
+
+[sub_resource type="QuadMesh" id="QuadMesh_uv6se"]
+size = Vector2(20, 12)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4nikq"]
+size = Vector3(32.1007, 1, 16.0985)
+
+[node name="Pool" type="Node3D"]
+
+[node name="ref" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1906, 0.847162, 2.68546)
+visible = false
+mesh = SubResource("BoxMesh_gmu41")
+
+[node name="water" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.261473, 0)
+mesh = SubResource("QuadMesh_uv6se")
+surface_material_override/0 = ExtResource("5_fqfmb")
+
+[node name="pool_02" parent="." instance=ExtResource("6_3dc4l")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0145874, -0.48117, -0.0292358)
+shape = SubResource("BoxShape3D_4nikq")

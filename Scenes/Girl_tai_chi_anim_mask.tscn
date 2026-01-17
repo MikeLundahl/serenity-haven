@@ -1600,6 +1600,5 @@ skin = SubResource("Skin_pjaog")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_s0h3x")
+&"": SubResource("AnimationLibrary_s0h3x")
 }
-autoplay = "tai_chi"
