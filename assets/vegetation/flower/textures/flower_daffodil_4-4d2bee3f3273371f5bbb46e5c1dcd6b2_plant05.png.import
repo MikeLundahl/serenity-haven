@@ -1,0 +1,37 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://baqvuajnlfst0"
+path="res://.godot/imported/flower_daffodil_4-4d2bee3f3273371f5bbb46e5c1dcd6b2_plant05.png-823f6028c0a329c7b420e986245d48c3.ctex"
+metadata={
+"vram_texture": false
+}
+generator_parameters={
+"md5": "a8b57ffbffa4a0b23d0b3b5f9b63968e"
+}
+
+[deps]
+
+source_file="res://assets/vegetation/flower/textures/flower_daffodil_4-4d2bee3f3273371f5bbb46e5c1dcd6b2_plant05.png"
+dest_files=["res://.godot/imported/flower_daffodil_4-4d2bee3f3273371f5bbb46e5c1dcd6b2_plant05.png-823f6028c0a329c7b420e986245d48c3.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1
