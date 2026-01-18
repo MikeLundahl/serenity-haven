@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://qmfbyw7ex5om"]
+
+[ext_resource type="ArrayMesh" uid="uid://7gplj3rr5ic6" path="res://assets/environment/wall/wall.obj" id="1_atnyv"]
+[ext_resource type="Material" uid="uid://cfoinc2kaf6w0" path="res://assets/environment/wall/wall_vegetation_outer.material" id="2_rljgw"]
+[ext_resource type="Material" uid="uid://rr4qxnpgose7" path="res://assets/environment/wall/wall_vegetation_inner.material" id="3_o56qq"]
+
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o56qq"]
+size = Vector3(4, 2.3373, 2.0644)
+
+[node name="Wall" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_atnyv")
+surface_material_override/1 = ExtResource("2_rljgw")
+surface_material_override/2 = ExtResource("3_o56qq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00302124, 1.14755, 0.00680029)
+shape = SubResource("BoxShape3D_o56qq")

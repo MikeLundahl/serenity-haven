@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh7jwfmed6puy"]
+
+[ext_resource type="ArrayMesh" uid="uid://cjcrpuk6gghyo" path="res://assets/props/flamingo/flamingo.obj" id="1_oo2mg"]
+[ext_resource type="Material" uid="uid://cwburdyyhdwoi" path="res://assets/props/flamingo/flamingo.material" id="2_j18kc"]
+
+
+[node name="Flamingo" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_oo2mg")
+surface_material_override/0 = ExtResource("2_j18kc")
