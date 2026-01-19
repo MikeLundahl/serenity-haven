@@ -1,9 +1,10 @@
-[gd_scene load_steps=36 format=3 uid="uid://bberpbebph66c"]
+[gd_scene load_steps=37 format=3 uid="uid://bberpbebph66c"]
 
 [ext_resource type="Script" uid="uid://b6ba3cjpttmty" path="res://Scenes/main.gd" id="1_k12tt"]
 [ext_resource type="Script" uid="uid://gfk11ar2mhi2" path="res://scripts/controls.gd" id="2_fevyy"]
 [ext_resource type="CompressedTexture3D" uid="uid://c3x5h4d1sifiv" path="res://assets/lut/environment_adjustments_3d_lut_template.jpg" id="2_h1bgf"]
 [ext_resource type="Texture2D" uid="uid://bxlaamog7prqf" path="res://assets/hdri/kloofendal_48d_partly_cloudy_puresky_4k.hdr" id="3_b3802"]
+[ext_resource type="PackedScene" uid="uid://bcv6mgl5g6hyd" path="res://assets/ui/pause/pause.tscn" id="3_hibaj"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://Scenes/Sources/Player/player.tscn" id="4_fevyy"]
 [ext_resource type="PackedScene" uid="uid://cxnacoxdubgi4" path="res://assets/environment/pool/pool.tscn" id="5_hibaj"]
 [ext_resource type="PackedScene" uid="uid://2rcrf5fxb8my" path="res://assets/environment/tile_floor/floor_tile_01.tscn" id="6_pdsj5"]
@@ -38,6 +39,7 @@ glow_intensity = 0.13
 glow_bloom = 0.13
 glow_hdr_threshold = 0.82
 glow_hdr_scale = 0.12
+adjustment_enabled = true
 adjustment_saturation = 0.6
 adjustment_color_correction = ExtResource("2_h1bgf")
 
@@ -346,6 +348,8 @@ script = ExtResource("1_k12tt")
 [node name="Controls" type="Node" parent="."]
 script = ExtResource("2_fevyy")
 metadata/_custom_type_script = "uid://gfk11ar2mhi2"
+
+[node name="Pause" parent="." instance=ExtResource("3_hibaj")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1gjqi")
