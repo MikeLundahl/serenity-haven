@@ -9,6 +9,7 @@ extends Node3D
 var is_quitting: bool = false
 
 func _ready() -> void:
+	
 	char_animaion.play_section("tai_chi", 21.2443)
 	canvas_layer.show()
 	
