@@ -1,11 +1,11 @@
-[gd_scene load_steps=112 format=4 uid="uid://b1legcxkvkf2r"]
+[gd_scene load_steps=113 format=4 uid="uid://b1legcxkvkf2r"]
 
 [ext_resource type="Texture2D" uid="uid://dys3yvfxlqbfy" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_bikinibra2.png" id="1"]
 [ext_resource type="Texture2D" uid="uid://bit6fb35mho6r" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_bikinibra2_normals.png" id="2"]
 [ext_resource type="Texture2D" uid="uid://0lr71uqsbp38" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_bikinislip2.png" id="3"]
 [ext_resource type="Texture2D" uid="uid://clb0fpqmov1c7" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_bikinislip2_normals.png" id="4"]
 [ext_resource type="Texture2D" uid="uid://dbogswq0ko55x" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_young_lightskinned_female_genitals_diffuse2.png" id="5"]
-[ext_resource type="Shader" uid="uid://7dqcltehkmkm" path="res://Scenes/Shaders/skin_shader_2.tres" id="6"]
+[ext_resource type="Shader" uid="uid://7dqcltehkmkm" path="res://assets/shaders/skin_shader_2.tres" id="6"]
 [ext_resource type="Texture2D" uid="uid://bd35s8o7kxopc" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_brazbikinibra.png" id="7"]
 [ext_resource type="Texture2D" uid="uid://dy5e5yjpes01y" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_brazbikinislip.png" id="8"]
 [ext_resource type="Texture2D" uid="uid://cilpuo6ebgqub" path="res://Scenes/Sources/Character/Girl_tai_chi_anim_mask_bratex2.png" id="9"]
@@ -1234,6 +1234,10 @@ _data = {
 &"tai_chi": SubResource("Animation_4wve2")
 }
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6mrkr"]
+radius = 1.00679
+height = 2.99811
+
 [node name="Girl_tai_chi_anim_mask" type="Node3D"]
 
 [node name="Girl_tai_chi" type="Node3D" parent="."]
@@ -1602,3 +1606,9 @@ skin = SubResource("Skin_pjaog")
 libraries = {
 &"": SubResource("AnimationLibrary_s0h3x")
 }
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.747039, -0.78018)
+shape = SubResource("CapsuleShape3D_6mrkr")
