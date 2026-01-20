@@ -1,9 +1,10 @@
-[gd_scene load_steps=36 format=3 uid="uid://bberpbebph66c"]
+[gd_scene load_steps=37 format=3 uid="uid://bberpbebph66c"]
 
 [ext_resource type="Script" uid="uid://b6ba3cjpttmty" path="res://Scenes/main.gd" id="1_k12tt"]
 [ext_resource type="Script" uid="uid://gfk11ar2mhi2" path="res://scripts/controls.gd" id="2_fevyy"]
 [ext_resource type="CompressedTexture3D" uid="uid://c3x5h4d1sifiv" path="res://assets/lut/environment_adjustments_3d_lut_template.jpg" id="2_h1bgf"]
 [ext_resource type="Texture2D" uid="uid://bxlaamog7prqf" path="res://assets/hdri/kloofendal_48d_partly_cloudy_puresky_4k.hdr" id="3_b3802"]
+[ext_resource type="PackedScene" uid="uid://bcv6mgl5g6hyd" path="res://assets/ui/pause/pause.tscn" id="3_hibaj"]
 [ext_resource type="PackedScene" uid="uid://cdk6hwb4hi2wc" path="res://Scenes/Sources/Player/player.tscn" id="4_fevyy"]
 [ext_resource type="PackedScene" uid="uid://cxnacoxdubgi4" path="res://assets/environment/pool/pool.tscn" id="5_hibaj"]
 [ext_resource type="PackedScene" uid="uid://2rcrf5fxb8my" path="res://assets/environment/tile_floor/floor_tile_01.tscn" id="6_pdsj5"]
@@ -38,6 +39,7 @@ glow_intensity = 0.13
 glow_bloom = 0.13
 glow_hdr_threshold = 0.82
 glow_hdr_scale = 0.12
+adjustment_enabled = true
 adjustment_saturation = 0.6
 adjustment_color_correction = ExtResource("2_h1bgf")
 
@@ -346,6 +348,8 @@ script = ExtResource("1_k12tt")
 [node name="Controls" type="Node" parent="."]
 script = ExtResource("2_fevyy")
 metadata/_custom_type_script = "uid://gfk11ar2mhi2"
+
+[node name="Pause" parent="." instance=ExtResource("3_hibaj")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_1gjqi")
@@ -698,34 +702,38 @@ material_override = ExtResource("17_b3802")
 size = Vector3(8, 2.47266, 8.80127)
 
 [node name="Plateue" type="CSGBox3D" parent="WIP"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.705, 0.553467, 0.758418)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.705, -0.474976, -0.148976)
 material_override = ExtResource("17_b3802")
-size = Vector3(34.3958, 2.10693, 33.888)
+size = Vector3(34.3958, 4.16382, 35.7028)
 
 [node name="step" type="CSGBox3D" parent="WIP/Plateue"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7622, 0.118164, -4.3251)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.7622, 1.08625, -4.3251)
 size = Vector3(1, 1.23633, 18.0586)
 
 [node name="step2" type="CSGBox3D" parent="WIP/Plateue"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.684, -0.013916, -4.3251)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.684, 0.954167, -4.3251)
 size = Vector3(1, 0.972168, 18.0586)
 
 [node name="step3" type="CSGBox3D" parent="WIP/Plateue"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6332, -0.15448, -4.3251)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6332, 0.813603, -4.3251)
 size = Vector3(1, 0.69104, 18.0586)
 
 [node name="step4" type="CSGBox3D" parent="WIP/Plateue"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6072, -0.273102, -4.3251)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6072, 0.694981, -4.3251)
 size = Vector3(1, 0.453796, 18.0586)
 
 [node name="step5" type="CSGBox3D" parent="WIP/Plateue"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5975, -0.368729, -4.3251)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5975, 0.599354, -4.3251)
 size = Vector3(1, 0.262543, 18.0586)
 
 [node name="Building" type="CSGBox3D" parent="WIP"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.51506, 5.36627, -23.6652)
 material_override = ExtResource("17_b3802")
 size = Vector3(57.2498, 11.7325, 11.7935)
+
+[node name="WalkWay" type="CSGBox3D" parent="WIP/Building"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.25177, -5.14737, 8.70416)
+size = Vector3(44.5341, 2.81311, 5.62787)
 
 [node name="Beach" type="CSGBox3D" parent="WIP"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.4985, -1.66243, 15.7152)
@@ -743,11 +751,26 @@ material_override = ExtResource("17_b3802")
 size = Vector3(6.87207, 1, 12.4292)
 
 [node name="Restaurant" type="CSGBox3D" parent="WIP"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.102, 0.164281, -22.2817)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.2486, 0.164281, -21.8149)
 material_override = ExtResource("17_b3802")
-size = Vector3(16.4102, 2.74365, 18.9022)
+size = Vector3(18.1171, 2.74365, 19.8359)
+
+[node name="ceiling" type="CSGBox3D" parent="WIP/Restaurant"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.07176, 0)
+material_override = ExtResource("17_b3802")
+size = Vector3(18.1171, 0.55725, 19.8359)
+
+[node name="Tennis_court" type="CSGBox3D" parent="WIP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7884, -1.45991, 25.1147)
+material_override = ExtResource("17_b3802")
+size = Vector3(23.77, 1, 10.97)
+
+[node name="Net" type="CSGBox3D" parent="WIP/Tennis_court"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.314697, 0.988638, 0.0826263)
+size = Vector3(0.371, 1.06, 10.858)
 
 [node name="WIP_stripes" type="Node3D" parent="."]
+visible = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="WIP_stripes"]
 transform = Transform3D(0.166769, -0.985996, 4.30993e-08, 0, -4.37114e-08, -1, 0.985996, 0.166769, -7.28969e-09, 15.2289, 1.10412, -8.91248)
@@ -765,11 +788,11 @@ mesh = SubResource("PlaneMesh_k12tt")
 surface_material_override/0 = ExtResource("17_h1bgf")
 
 [node name="MeshInstance3D3" type="MeshInstance3D" parent="WIP_stripes"]
-transform = Transform3D(-0.580234, 0.81445, -3.56008e-08, 1.73714e-15, -4.37114e-08, -1, -0.81445, -0.580234, 2.53628e-08, -15.1726, 1.10412, 8.37535)
+transform = Transform3D(-0.580234, 0.81445, -3.56008e-08, 1.73714e-15, -4.37114e-08, -1, -0.81445, -0.580234, 2.53628e-08, -15.1726, 1.10412, 8.43393)
 mesh = SubResource("PlaneMesh_k12tt")
 surface_material_override/0 = ExtResource("17_h1bgf")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="WIP_stripes"]
-transform = Transform3D(-0.302969, 0.953001, -4.1657e-08, 1.73714e-15, -4.37114e-08, -1, -0.953, -0.302969, 1.32432e-08, -18.3486, 1.10412, 1.92726)
+transform = Transform3D(-0.302969, 0.953001, -4.1657e-08, 1.73714e-15, -4.37114e-08, -1, -0.953, -0.302969, 1.32432e-08, -18.3486, 1.10412, 2.15038)
 mesh = SubResource("PlaneMesh_k12tt")
 surface_material_override/0 = ExtResource("17_h1bgf")
